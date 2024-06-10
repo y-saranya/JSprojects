@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+    <style>
+        .box {
+            background-color: rgb(244, 171, 217);
+            border: 2px solid red;
+            width: 300px;
+            height: 700px;
+            border-radius: 5px;
+            text-align: center;
+            position: relative;
+        }
+        button {
+            height: 30px;
+            width: 30px;
+            background-color: rgb(106, 234, 234);
+            position: absolute;
+            top: 200px;
+            left: 280px;
+        }
+        button:hover {
+            transform: translateY(-10px);
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="b">
+        <div id="a">
+                <h2>screen</h2>
+                <hr>
+                <p>second example</p>
+        </div>
+    
+    </div>
+    <button id="but" onclick="myFunction()">&lt;&lt;</button>
+    
+</body>
+<script>
+    function myFunction() {
+        mybutton = document.getElementById("but");
+        mywidth = document.getElementById("b");
+        (mybutton.innerHTML == "&lt;&lt;") ?
+            (
+                (mybutton.innerHTML = "&gt;&gt;"),
+                (mywidth.style.width = "25px"),
+                (mybutton.style.left = "7px"),
+                (document.getElementById("a").style.display = "none")
+            ) : (
+                (mybutton.innerHTML = "&lt;&lt;"),
+                (mywidth.style.width = "300px"),
+                (mybutton.style.left = "280px"),
+                (document.getElementById("a").style.display = "contents")
+            )
+    
+    
+    }
+</script>
+    
+</html>
