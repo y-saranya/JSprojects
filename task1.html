@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>tooltip</title>
+<style>
+    body {
+        background-color: gray;
+    }
+
+    div {
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        border: 2px solid white;
+        padding: 4px;
+        display: inline-block;
+    }
+
+    h2 {
+        text-align: center;
+        color: white;
+        font-size: x-large;
+        font: 20px Arial, sans-serif;
+        margin-top: 10px;
+    }
+
+    div:not(:first-child) {
+        margin-left: -15px;
+    }
+
+    div:hover {
+        transform: translatey(-10px);
+    }
+</style>
+
+<body>
+    <div style="background-color: brown;" title="saranya">
+        <h2>S</h2>
+    </div>
+    <div style="background-color: aqua;" title="javeed">
+        <h2>J</h2>
+    </div>
+    <div style="background-color: bisque;" title="chinni">
+        <h2>C</h2>
+    </div>
+    <div style="background-color: blue;" title="vivek">
+        <h2>V</h2>
+    </div>
+</body>
+
+</html>
